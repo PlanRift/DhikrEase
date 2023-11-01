@@ -19,6 +19,8 @@ class DetailArticleActivity : AppCompatActivity() {
         binding = ActivityDetailArticleBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val title = intent.getStringExtra(DETAIL_TITLE)
         val desc = intent.getStringExtra(DETAIL_DESC)
         val image = intent.getIntExtra(DETAIL_IMAGE,0)
@@ -31,5 +33,10 @@ class DetailArticleActivity : AppCompatActivity() {
                 .load(image)
                 .into(imgDetail)
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressedDispatcher.onBackPressed()
+        return super.onSupportNavigateUp()
     }
 }

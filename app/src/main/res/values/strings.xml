@@ -56,6 +56,12 @@
     </string-array>
 
 <!--    Article-->
+    <string-array name="arr_title_artikel">
+        <item>Umrah on a budget</item>
+        <item>Live condition in Palestine</item>
+        <item>Halal foods in the UK is better than before</item>
+    </string-array>
+
     <integer-array name="arr_img_artikel">
         <item>@drawable/article_1</item>
         <item>@drawable/article_2</item>

@@ -12,7 +12,7 @@ import com.example.dhikrease.ui.detail.DetailArticleActivity
 
 class ArticleAdapter (private val listArtikel: ArrayList<ArticleModel>) :
     RecyclerView.Adapter<ArticleAdapter.MyViewHolder>() {
-    class MyViewHolder(val binding: detail ) : RecyclerView.ViewHolder(binding.root) {
+    class MyViewHolder( val binding: ArticleFragmentBinding ) : RecyclerView.ViewHolder(binding.root) {
 
     }
 
@@ -31,9 +31,9 @@ class ArticleAdapter (private val listArtikel: ArrayList<ArticleModel>) :
 
         Glide.with(holder.itemView.context)
             .load(data.imageArtikel)
-            .into(holder.binding.imgFragment1)
+            .into(holder.binding.imgFragment)
 
-        holder.binding.imgFragment1.setOnClickListener{
+        holder.binding.imgFragment.setOnClickListener{
             val intentDetail = Intent(holder.itemView.context, DetailArticleActivity::class.java)
             intentDetail.putExtra(DetailArticleActivity.DETAIL_DESC, data.descArtikel)
             intentDetail.putExtra(DetailArticleActivity.DETAIL_TITLE, data.titleArtikel)

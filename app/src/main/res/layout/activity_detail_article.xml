@@ -20,7 +20,7 @@
             android:id="@+id/img_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="@string/content_txt_image_artikel"
+            android:contentDescription="Image"
             android:scaleType="centerCrop"
             android:src="@drawable/article_1"
             android:transitionName="artikel" />
@@ -59,7 +59,7 @@
             android:fontFamily="sans-serif-black"
             android:paddingHorizontal="16dp"
             android:paddingVertical="8dp"
-            android:textColor="@color/green_light"
+            android:textColor="@color/white"
             android:textSize="17sp" />
     </ScrollView>
 
